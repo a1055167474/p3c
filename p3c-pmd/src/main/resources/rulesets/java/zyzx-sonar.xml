@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<ruleset name="zyzxSonar" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>zyzxSonar</description>
+
+    <rule name="MethodParameterCountRule"
+        message="java.zyzx.MethodParameterCountRule.violation.msg"
+        class="com.alibaba.p3c.pmd.lang.java.rule.zyzx.MethodParameterCountRule">
+        <priority>1</priority>
+        <example>
+        <![CDATA[
+Negative example:
+   public void methodB(int a,int b,int c,int d,int e,int f,int g,int h){
+   }
+        ]]>
+        </example>
+        <example>
+        <![CDATA[
+Positive example： 
+   public void methodA(Obj o){
+   }
+         ]]>
+        </example>
+    </rule>
+
+
+
+</ruleset>

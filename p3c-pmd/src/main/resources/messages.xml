@@ -2,6 +2,11 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <!--naming-->
+
+    <entry key="java.zyzx.MethodParameterCountRule.violation.msg">
+        <![CDATA[方法参数的个数不宜过多]]>
+    </entry>
+
     <entry key="java.naming.AbstractClassShouldStartWithAbstractNamingRule.violation.msg">
         <![CDATA[抽象类【%s】命名应以Abstract或Base开头]]>
     </entry>
