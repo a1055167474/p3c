@@ -3,6 +3,19 @@
 <properties>
     <!--naming-->
 
+    <entry key="java.zyzx.ArithmeticOperatorCheck.violation.msg"><![CDATA[这里的算数运算符可能存在错误]]></entry>
+    <entry key="java.zyzx.ArithmeticOperatorCheck.rule.msg">
+        <![CDATA[正确的运算符表示方式为"+=",而如果写成"=+"可能是算数运算符写法错误，如果要进行赋值运算，请省略"+"]]>
+    </entry>
+
+<!--    <entry key="java.zyzx.PrintStackTraceCalledWithoutArgumentCheck.rule.msg">-->
+<!--        <![CDATA[说明：Throw.printStackTrace(...)会打印异常信息，但也会暴露敏感信息]]>-->
+<!--    </entry>-->
+
+    <entry key="java.zyzx.SillyEqualsCheck.rule.msg">
+        <![CDATA[不应该做的equals检查]]>
+    </entry>
+
     <entry key="java.zyzx.MethodParameterCountRule.violation.msg">
         <![CDATA[方法参数的个数不宜过多]]>
     </entry>

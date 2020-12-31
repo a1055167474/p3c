@@ -12,18 +12,100 @@
         <example>
         <![CDATA[
 Negative example:
-   public void methodB(int a,int b,int c,int d,int e,int f,int g,int h){
+   public class ssss{
+	    public void methodB(int a,int b,int c,int d,int e,int f,int g,int h){
+   }
    }
         ]]>
         </example>
         <example>
         <![CDATA[
-Positive example： 
-   public void methodA(Obj o){
+
+Positive example：
+   public class ssss{
+	    public void methodA(Obj o){
+   }
    }
          ]]>
         </example>
     </rule>
+
+    <rule name="ArithmeticOperatorCheck"
+          language="java"
+          message="java.zyzx.ArithmeticOperatorCheck.rule.msg"
+          class="com.alibaba.p3c.pmd.lang.java.rule.zyzx.ArithmeticOperatorCheck">
+        <priority>3</priority>
+        <example>
+            <![CDATA[
+Negative example:
+        b =+ a;
+        b =- a;
+        ]]>
+        </example>
+        <example>
+            <![CDATA[
+Positive example：
+        b += a;
+        b -= a;
+        b = a;
+         ]]>
+        </example>
+    </rule>
+
+<!--    <rule name="PrintStackTraceCalledWithoutArgumentCheck"-->
+<!--          language="java"-->
+<!--          message="java.zyzx.PrintStackTraceCalledWithoutArgumentCheck.rule.msg"-->
+<!--          class="com.alibaba.p3c.pmd.lang.java.rule.zyzx.PrintStackTraceCalledWithoutArgumentCheck">-->
+<!--        <priority>2</priority>-->
+<!--        <example>-->
+<!--            <![CDATA[-->
+<!--Negative example:-->
+
+<!--        try{-->
+<!--        }catch(Exception e){-->
+<!--         e.printStackTrace();-->
+<!--        }-->
+<!--        ]]>-->
+<!--        </example>-->
+<!--        <example>-->
+<!--            <![CDATA[-->
+<!--Positive example：-->
+
+<!--        try{-->
+<!--        }catch(Exception e){-->
+<!--         LOGGER.log("context", e);-->
+<!--        }-->
+<!--         ]]>-->
+<!--        </example>-->
+<!--    </rule>-->
+
+    <rule name="SillyEqualsCheck"
+          language="java"
+          message="java.zyzx.SillyEqualsCheck.rule.msg"
+          class="com.alibaba.p3c.pmd.lang.java.rule.zyzx.SillyEqualsCheck">
+        <priority>2</priority>
+        <example>
+            <![CDATA[
+Negative example:
+
+        try{
+        }catch(Exception e){
+         e.printStackTrace();
+        }
+        ]]>
+        </example>
+        <example>
+            <![CDATA[
+Positive example：
+
+        try{
+        }catch(Exception e){
+         LOGGER.log("context", e);
+        }
+         ]]>
+        </example>
+    </rule>
+
 
 
 

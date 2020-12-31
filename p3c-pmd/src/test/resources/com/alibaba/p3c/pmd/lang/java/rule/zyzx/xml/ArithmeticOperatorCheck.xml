@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+
+	<code-fragment id="ArithmeticOperatorCheck">
+		<![CDATA[
+package com.alibaba.p3c.pmd.lang.java.rule.zyzx;
+
+public class ArithmeticOperatorCheck {
+
+    void calculation() {
+
+        int a = 1;
+        int b = 2;
+        b = +a;
+        b = -a;
+    }
+}
+        ]]>
+	</code-fragment>
+	<test-code>
+		<description>ArithmeticOperatorCheck</description>
+		<expected-problems>2</expected-problems>
+		<expected-linenumbers>9,10</expected-linenumbers>
+		<code-ref id="ArithmeticOperatorCheck"/>
+	</test-code>
+
+</test-data>

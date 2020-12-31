@@ -10,12 +10,32 @@ public class ZyzxSonarRulesTest extends SimpleAggregatorTst {
     @Override
     public void setUp(){
         addRule(RULESET,"MethodParameterCountRule");
+        addRule(RULESET,"ArithmeticOperatorCheck");
+        addRule(RULESET,"SillyEqualsCheck");
     }
 
     @Test
     public void testMethodParameterCountRule(){
         Rule rule = this.findRule(RULESET,"MethodParameterCountRule");
         runTests(rule,"MethodParameterCountRule");
+    }
+
+    @Test
+    public void testArithmeticOperatorCheck(){
+        Rule rule = this.findRule(RULESET,"ArithmeticOperatorCheck");
+        runTests(rule,"ArithmeticOperatorCheck");
+    }
+
+//    @Test
+//    public void testPrintStackTraceCalledWithoutArgumentCheck(){
+//        Rule rule = this.findRule(RULESET,"PrintStackTraceCalledWithoutArgumentCheck");
+//        runTests(rule,"PrintStackTraceCalledWithoutArgumentCheck");
+//    }
+
+    @Test
+    public void testSillyEqualsCheck(){
+        Rule rule = this.findRule(RULESET,"SillyEqualsCheck");
+        runTests(rule,"SillyEqualsCheck");
     }
 
 }

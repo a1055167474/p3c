@@ -12,8 +12,8 @@ import java.util.List;
 /**
  * [Mandatory] Magic values, except for predefined, are forbidden in coding.
  *
- * @author shengfang.gsf
- * @date 2016/12/13
+ * @author qinzhibin
+ * @date 2020/10/15
  */
 public class MethodParameterCountRule extends AbstractAliRule {
     private static final String METHOD_XPATH="//MethodDeclarator";
